@@ -51,6 +51,7 @@ export function ProjectGantt() {
                     <Space>
                       <StatusBadge value={phase.status} />
                       <UserAvatar name={phase.owner?.name} />
+                      <Typography.Text type="secondary">{Math.round(phase.percentComplete)}%</Typography.Text>
                     </Space>
                   </div>
                   <div className="gantt-track" aria-label={`${phase.name} 时间线`}>
