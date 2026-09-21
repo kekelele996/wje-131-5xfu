@@ -41,7 +41,7 @@ export class SeedService implements OnModuleInit {
         startDate: '2026-03-01',
         plannedEndDate: '2026-12-20',
         status: ProjectStatus.InProgress,
-        progress: 46,
+        progress: 71,
         managerId: users[0].id
       },
       {
@@ -51,7 +51,7 @@ export class SeedService implements OnModuleInit {
         startDate: '2026-02-10',
         plannedEndDate: '2026-09-30',
         status: ProjectStatus.Delayed,
-        progress: 38,
+        progress: 0,
         managerId: users[0].id
       }
     ]);
@@ -75,7 +75,7 @@ export class SeedService implements OnModuleInit {
         plannedStartDate: '2026-05-06',
         plannedEndDate: '2026-07-30',
         actualStartDate: '2026-05-08',
-        percentComplete: 58,
+        percentComplete: 50,
         ownerId: users[1].id,
         priority: Priority.Critical,
         status: PhaseStatus.InProgress
@@ -86,7 +86,7 @@ export class SeedService implements OnModuleInit {
         plannedStartDate: '2026-04-01',
         plannedEndDate: '2026-06-20',
         actualStartDate: '2026-04-04',
-        percentComplete: 42,
+        percentComplete: 0,
         ownerId: users[1].id,
         priority: Priority.Critical,
         status: PhaseStatus.Blocked
@@ -119,8 +119,9 @@ export class SeedService implements OnModuleInit {
         description: '复核层高、轴线与支撑体系',
         ownerId: users[1].id,
         estimatedHours: '12.00',
-        actualHours: '8.00',
-        status: TaskStatus.Review
+        actualHours: '11.50',
+        status: TaskStatus.Done,
+        completedAt: '2026-06-12'
       },
       {
         phaseId: phases[2].id,
